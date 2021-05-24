@@ -6,8 +6,10 @@
 
 import * as Linking from 'expo-linking';
 
+const prefix = Linking.makeUrl('/')
+
 export default {
-  prefixes: [Linking.makeUrl('/')],
+  prefixes: [prefix],
   config: {
     screens: {
       Root: {
